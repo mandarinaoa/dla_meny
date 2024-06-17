@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/create_product_form" method="post">
+        {% csrf_token %}
+        <p>Имя товара <input type="text" name="name_product"></p>
+        <p>Цена твоара<input type="number" name="price"></p>
+        <p>Количество товара<input type="number" name="quantity"></p>
+        <p>Рейтинг товара<input type="number" name="stars"></p>
+        <p>Страна производства товара <input type="text" name="country"></p>
+        <input type="submit">
+    </form>
+</body>
+</html>
